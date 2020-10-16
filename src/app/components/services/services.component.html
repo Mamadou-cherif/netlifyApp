@@ -1,0 +1,29 @@
+<!-- Services -->
+<div id="services" class="cards-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>{{services.h2Title}}</h2>
+                <p class="p-heading p-large">{{services.GlobalDescription}}</p>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+
+                <!-- Card -->
+                <div class="card" *ngFor="let service of services.tableServices">
+                    <img class="card-image" src="{{service.iconLinks}}" alt="alternative">
+                    <div class="card-body">
+                        <h4 class="card-title">{{services.iconTitle}}</h4>
+                        <p>{{services.iconDescription}}</p>
+                    </div>
+                </div>
+                <!-- end of card -->
+
+                <!-- end of card -->
+                
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of cards-1 -->
+<!-- end of services -->
