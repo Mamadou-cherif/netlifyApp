@@ -1,40 +1,33 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import * as $ from "jquery";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {HomeComponent } from './components/home/home.component';
-import { ServicesComponent } from './components/services/services.component';
-import { ConsumersComponent } from './components/consumers/consumers.component';
-import { PricingComponent } from './components/pricing/pricing.component';
-import { RequestComponent } from './components/request/request.component';
-import { AboutComponent } from './components/about/about.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { DetailsComponent } from './components/details/details.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { VideoCaptionComponent } from './components/video-caption/video-caption.component';
+import { InscriptionComponent } from './components/inscription/inscription.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { LoginComponent } from './components/login/login.component';
-import { BlogSectionComponent } from './components/blog-section/blog-section.component'
+import { LocationComponent } from './components/location/location.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { HomeImageComponent } from './components/home-image/home-image.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    ServicesComponent,
-    ConsumersComponent,
-    PricingComponent,
-    RequestComponent,
-    AboutComponent,
-    ContactComponent,
-    DetailsComponent,
+    BlogComponent,
+    VideoCaptionComponent,
+    InscriptionComponent,
     FooterComponent,
-    NavBarComponent,
-    LoginComponent,
-    BlogSectionComponent
+    LocationComponent,
+    NavigationComponent,
+    HomeImageComponent,
+  
    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
